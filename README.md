@@ -1,0 +1,2 @@
+# ReLMXEL-Adaptive-RL-Based-Memory-Controller-with-Explainable-Energy-and-Latency-Optimization
+ReLMXEL (Reinforcement Learning for Memory Controller with Explainable Energy and Latency Optimization) is an explainable multi-agent RL framework that optimizes memory controller parameters to reduce latency and energy consumption. It dynamically adjusts based on memory behavior, improving performance with transparent, adaptive decision-making.
