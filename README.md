@@ -26,8 +26,8 @@ To run and experiment with the **ReLMXEL** framework, you'll need:
 ### Setup
 The ReLMXEL framework requires benchmark trace files for experimentation. Trace files can be generated from the **SPEC CPU 2017** suite using ChampSim and benchmarks like **GEMM, STREAM, and BFS** using **Intel's Pin Tool**. The discount factor is chosen to be 0.9 and learning rate of 0.1 upon experimentation across workloads.
 
-- **gamma (γ)**: Discount factor for RL, tuned from {0.9, 0.95, 0.99}.
-- **alpha (α)**: Learning rate for the RL agent, tuned across {0.01, 0.1, 0.3, 0.5, 0.6, 0.7, 0.8}.
+- **gamma (γ)**: Discount factor for RL, tuned from **{0.9, 0.95, 0.99}**.
+- **alpha (α)**: Learning rate for the RL agent, tuned across **{0.01, 0.1, 0.3, 0.5, 0.6, 0.7, 0.8}**.
 - **Trace Split Size**: Granularity of decision-making by segmenting traces into fixed-size partitions (default is **30,000**).
 - **Exploration Parameter (ε_new)**: Controls the exploration-exploitation trade-off, with **ε_old** being 0.8 promoting exploration initially and **ε_new** set to **0.001** based on experimentation to promote exploitation during later stages.
 - **Explainability**: We intergrated **SARSA algorithm with reward decomposition**, to not only optimize the performance but also to draw explanations for the actions taken by **ReLMXEL**.
