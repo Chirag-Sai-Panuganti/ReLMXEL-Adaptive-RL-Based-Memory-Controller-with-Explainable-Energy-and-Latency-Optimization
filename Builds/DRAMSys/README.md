@@ -18,10 +18,11 @@
 ## Setting up DRAMSys
 ### Steps:
 
-1. Replace the files `Controller.h and Controller.cpp` in `DRAMSys/src/libdramsys/DRAMSys/controller` with the corresponding files in the **Modifications** directory.
+1. Replace the files `Controller.h` and `Controller.cpp` in `DRAMSys/src/libdramsys/DRAMSys/controller` with the corresponding files in the **Modifications** directory.
 
-2. Replace the files `StlPlayer.h and StlPlayer.cpp` in `DRAMSys/src/simulator/simulator/player` with the corresponding files in the **Modifications** directory.
+2. Replace the files `StlPlayer.h` and `StlPlayer.cpp` in `DRAMSys/src/simulator/simulator/player` with the corresponding files in the **Modifications** directory.
 
+3. Change the trace file to be used from the `name` parameter in `DRAMSys/configs/ddr4-example.json` file.
 3. 
 ```console
 $ cd DRAMSys
@@ -31,12 +32,10 @@ $ cmake --build build
 
 4. Change the `PowerAnalysis` parameter from .json files in `DRAMSys/configs/simconfig/` to **true**
 
-## Generating Traces
-
-Once the setup and modifications are complete, you can generate memory traces using the following command format:
-
-`bash
-bin/champsim --warmup-instructions 1000000 --simulation-instructions {number_of_instructions} {workload_from_SPEC_2016}`
+5. Verify the working of simulator by: 
+```console
+$ ./DRAMSys/build/bin/DRAMSys ./configs/ddr4-example.json
+```
 
 ## References
-Gober, N., Chacon, G., Wang, L., Gratz, P. V., Jimenez, D. A., Teran, E., Pugsley, S., & Kim, J. (2022). The Championship Simulator: Architectural Simulation for Education and Competition. https://doi.org/10.48550/arXiv.2210.14324
+L. Steiner, M. Jung, F. S. Prado, K. Bykov, N. Wehn. International Conference on Embedded Computer Systems: Architectures, Modeling, and Simulation (SAMOS), July, 2020, Samos Island, Greece.
