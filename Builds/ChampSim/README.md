@@ -40,7 +40,7 @@ To simulate traces for the DRAM Memory Controller, you need to replace the exist
 
 Once the setup and modifications are complete, you can generate memory traces using the following command format:
 
-`$ Champsim/bin/champsim --warmup-instructions 1000000 --simulation-instructions <number_of_instructions> <workload_from_SPEC_2016>`
+`$ Champsim/bin/champsim --warmup-instructions 1000000 --simulation-instructions <number_of_instructions> <workload_from_SPEC_2017>`
 
 ## References
 Gober, N., Chacon, G., Wang, L., Gratz, P. V., Jimenez, D. A., Teran, E., Pugsley, S., & Kim, J. (2022). The Championship Simulator: Architectural Simulation for Education and Competition. https://doi.org/10.48550/arXiv.2210.14324
