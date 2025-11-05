@@ -24,7 +24,7 @@ To run and experiment with the **ReLMXEL** framework, you'll need:
 - **ChampSim**
 
 ### Setup
-The ReLMXEL framework requires benchmark trace files for experimentation. Trace files can be generated from the **SPEC CPU 2017** suite using ChampSim and benchmarks like **GEMM, STREAM, and BFS** using **Intel's Pin Tool**. The discount factor is chosen to be 0.9 and learning rate of 0.1 upon experimentation across workloads.
+The ReLMXEL framework requires benchmark trace files for experimentation. Trace files can be generated from the **SPEC CPU 2017** suite using ChampSim and benchmarks like **GEMM, STREAM**, and **BFS** using **Intel's Pin Tool**. The discount factor is chosen to be 0.9 and learning rate of 0.1 upon experimentation across workloads.
 
 - **gamma (γ)**: Discount factor for RL, tuned from **{0.9, 0.95, 0.99}**.
 - **alpha (α)**: Learning rate for the RL agent, tuned across **{0.01, 0.1, 0.3, 0.5, 0.6, 0.7, 0.8}**.
