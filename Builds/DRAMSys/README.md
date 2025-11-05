@@ -23,16 +23,17 @@
 2. Replace the files `StlPlayer.h` and `StlPlayer.cpp` in `DRAMSys/src/simulator/simulator/player` with the corresponding files in the **Modifications** directory.
 
 3. Change the trace file to be used from the `name` parameter in `DRAMSys/configs/ddr4-example.json` file.
-3. 
+
+4. Build the simulator: 
 ```console
 $ cd DRAMSys
 $ cmake -B build -D DRAMSYS_WITH_DRAMPOWER=Y
 $ cmake --build build
 ```
 
-4. Change the `PowerAnalysis` parameter from .json files in `DRAMSys/configs/simconfig/` to **true**
+5. Change the `PowerAnalysis` parameter from .json files in `DRAMSys/configs/simconfig/` to **true**
 
-5. Verify the working of simulator by: 
+6. Verify the working of simulator by: 
 ```console
 $ ./DRAMSys/build/bin/DRAMSys ./configs/ddr4-example.json
 ```
