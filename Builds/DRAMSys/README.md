@@ -18,9 +18,9 @@
 ## Setting up DRAMSys
 ### Steps:
 
-1. Replace the files `Controller.h` and `Controller.cpp` in `DRAMSys/src/libdramsys/DRAMSys/controller` with the corresponding files in the **Modifications** directory.
+1. Replace the files `Controller.h` and `Controller.cpp` in `DRAMSys/src/libdramsys/DRAMSys/controller` with the corresponding files in the **Modifications** directory for extracting additonal performance metrics.
 
-2. Replace the files `StlPlayer.h` and `StlPlayer.cpp` in `DRAMSys/src/simulator/simulator/player` with the corresponding files in the **Modifications** directory.
+2. Replace the files `StlPlayer.h` and `StlPlayer.cpp` in `DRAMSys/src/simulator/simulator/player` with the corresponding files in the **Modifications** directory for splitting the trace at regular intervals.
 
 3. Change the trace file to be used from the `name` parameter in `DRAMSys/configs/ddr4-example.json` file.
 
