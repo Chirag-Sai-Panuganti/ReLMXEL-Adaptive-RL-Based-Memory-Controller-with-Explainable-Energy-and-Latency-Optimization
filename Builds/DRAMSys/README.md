@@ -1,15 +1,12 @@
 # DRAMSys Simulator
-
 **DRAMSys** is a flexible DRAM subsystem design space exploration framework based on SystemC TLM-2.0. It was developed by the Microelectronic Systems Design Research Group at RPTU Kaiserslautern-Landau, by Fraunhofer IESE and by the Computer Engineering Group at JMU Würzburg.
 
 ## Dependencies
-### Compiler and Build Tools:
-
+### Compiler and Build Tools
 - **C++17 Compiler**: DRAMSys requires a C++17 compatible compiler.
 - **CMake**: Minimum version 3.24 is required for the build process.
 
-### SystemC:
-
+### SystemC
 - DRAMSys is based on **SystemC**. SystemC is included with FetchContent and will be built automatically with the project.
 - If you prefer to use a preinstalled version of SystemC, export the environment variable `SYSTEMC_HOME` (the SystemC installation directory) and enable the `DRAMSYS_USE_EXTERNAL_SYSTEMC` CMake option.
 - Make sure that the preinstalled SystemC library is built with the same C++ version as the one you are using for DRAMSys.
@@ -17,7 +14,6 @@
 
 ## Setting up DRAMSys
 ### Steps:
-
 1. Replace the files `Controller.h` and `Controller.cpp` in `DRAMSys/src/libdramsys/DRAMSys/controller` with the corresponding files in the **Modifications** directory for extracting additonal performance metrics.
 
 2. Replace the files `StlPlayer.h` and `StlPlayer.cpp` in `DRAMSys/src/simulator/simulator/player` with the corresponding files in the **Modifications** directory for splitting the trace at regular intervals.

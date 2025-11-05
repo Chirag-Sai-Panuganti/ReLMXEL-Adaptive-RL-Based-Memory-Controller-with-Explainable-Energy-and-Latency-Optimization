@@ -21,8 +21,7 @@ ChampSim relies on **[vcpkg](https://vcpkg.io)** for managing its external depen
     vcpkg/vcpkg install
     ```
 
-### Required Software:
-
+### Requirements
 - **C++ Compiler** (C++11 or later)
 - **CMake** (for project configuration and build)
 - **GNU Make** (for building the simulator)
