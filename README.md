@@ -12,7 +12,7 @@
 - **Multi-Agent RL Model**: A reinforcement learning agent that evaluates the memory controller’s performance, using feedback from multiple performance metrics.
 - **Performance Metrics**: Provides detailed performance analysis, including metrics such as average energy consumption, bandwidth utilization, latency, row buffer hits/misses, bank group and bank switches.
 - **Workload Traces**: Utilizes memory traces from benchmarks like **GEMM**, **STREAM**, **Breadth First Search** and workloads from **SPEC CPU 2017**, and more, to evaluate and optimize memory controller performance.
-![ReLMXEL](https://github.com/Chirag-Sai-Panuganti/ReLMXEL-Adaptive-RL-Based-Memory-Controller-with-Explainable-Energy-and-Latency-Optimization/tree/main/Resources/ReLMXEL.png)
+![ReLMXEL](Resources/ReLMXEL.png)
 
 ## Experimental Setup:
 
@@ -57,7 +57,7 @@ The baseline configuration for memory controller parameters is set as follows:
 ```
 
 ## Results:
-![Results](https://github.com/Chirag-Sai-Panuganti/ReLMXEL-Adaptive-RL-Based-Memory-Controller-with-Explainable-Energy-and-Latency-Optimization/tree/main/Resources/Results.png)
+![Results](Resources/Results.png)
 The **ReLMXEL** framework demonstrated significant improvements in energy efficiency, latency reduction, and memory bandwidth utilization across a variety of workloads. On average, ReLMXEL improved:
 
 - **Energy Consumption**: Reduced by 6.5% on an average compared to baseline approaches.
